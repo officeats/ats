@@ -3,41 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SecureSolar | Вибір мови</title>
-  <meta name="robots" content="noindex, nofollow">
+  <title>SecureSolar — Автоматизація. Безпека. Сонце. Зв’язок.</title>
+  <meta name="description" content="Проєктування та монтаж систем безпеки, автоматизації, відеоспостереження, СЕС, зв'язку. SecureSolar Україна.">
+  <meta name="keywords" content="безпека, відеоспостереження, СЕС, контроль доступу, Ajax, інтернет, автоматизація">
+  <meta name="robots" content="index, follow">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b0b0b;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-    .lang-buttons a {
-      display: inline-block;
-      margin: 1em;
-      padding: 1em 2em;
-      background: #0077cc;
-      color: white;
-      text-decoration: none;
-      font-size: 1.2em;
-      border-radius: 5px;
-    }
-    .lang-buttons a:hover {
-      background: #005fa3;
-    }
+    body { margin: 0; font-family: Arial, sans-serif; background: #fff; color: #000; }
+    header { display: flex; align-items: center; background: #0b0b0b; color: #fff; padding: 1em; }
+    header img { height: 80px; margin-right: 1em; }
+    header h1 { font-size: 1.5em; }
+    .lang-switcher { position: absolute; top: 10px; right: 10px; }
+    .lang-switcher a img { width: 32px; height: auto; margin-left: 10px; }
+    .main-section { text-align: center; padding: 2em; }
+    .main-section h2 { color: #0077cc; }
+    .sections { display: flex; flex-wrap: wrap; justify-content: center; gap: 2em; margin-top: 2em; }
+    .section-link { width: 280px; text-decoration: none; color: inherit; }
+    .section-link img { width: 100%; border-radius: 8px; border: 2px solid #0077cc; }
+    .section-link span { display: block; margin-top: 0.5em; font-weight: bold; font-size: 1.1em; }
+    footer { background: #0b0b0b; color: #fff; text-align: center; padding: 1em; margin-top: 3em; }
   </style>
 </head>
 <body>
-  <h1>Оберіть мову / Выберите язык</h1>
-  <div class="lang-buttons">
-    <a href="catalog.html">Українська</a>
-    <a href="catalog-ru.html">Русский</a>
+  <header>
+    <img src="logo.png" alt="SecureSolar Logo">
+    <h1>Автоматизація. Безпека. Сонце. Зв’язок.</h1>
+    <div class="lang-switcher">
+      <a href="home-ru.html"><img src="flag-ru.png" alt="Русский"></a>
+      <a href="home.html"><img src="flag-ua.png" alt="Українська"></a>
+    </div>
+  </header>
+
+  <div class="main-section">
+    <h2>Оберіть напрямок</h2>
+    <div class="sections">
+      <a href="security.html" class="section-link">
+        <img src="img/security.jpg" alt="Безпека">
+        <span>Безпека</span>
+      </a>
+      <a href="automation.html" class="section-link">
+        <img src="img/automation.jpg" alt="Автоматизація і СЕС">
+        <span>Автоматизація і СЕС</span>
+      </a>
+      <a href="internet.html" class="section-link">
+        <img src="img/internet.jpg" alt="Інтернет і зв’язок">
+        <span>Інтернет і зв’язок</span>
+      </a>
+    </div>
   </div>
+
+  <footer>
+    <p>Телефон: +380953360063 (Александр)</p>
+    <p>Email: <a href="mailto:panasonicats@gmail.com" style="color:#00aaff">panasonicats@gmail.com</a></p>
+    <p>Telegram: <a href="https://t.me/SecureSolar" style="color:#00aaff">@SecureSolar</a></p>
+  </footer>
 </body>
 </html>
